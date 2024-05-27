@@ -1,0 +1,119 @@
+body {
+    font-family: "Darumadrop One", sans-serif;
+    background: url(./img/bg-playlist.jpg) no-repeat center center fixed;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight white overlay */
+    background-blend-mode: darken;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+div {
+    margin-bottom: 2rem;
+}
+
+.char1 {
+    color: #BE2E34;
+}
+
+.char2 {
+    color: #5DAC41;
+}
+
+.char3 {
+    color: #F6DB4A;
+}
+
+.char4 {
+    color: #5EB1E0;
+}
+
+.char1, .char2, .char3, .char4 {
+    text-transform: uppercase;
+    font-family: "Darumadrop One", sans-serif;
+    font-size: 4rem;
+    -webkit-text-stroke: 0.1rem #2458A3;
+}
+
+#spotify {
+    width: 35%;
+    height: 70vh;
+    box-shadow: 0 0 0.25rem gray;
+}
+
+#back {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: white;
+    margin: 2rem;
+    -webkit-text-stroke: 0.12rem #2458A3;
+}
+
+#back:hover {
+    text-shadow: 0 0 1rem #5EB1E0;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .char1, .char2, .char3, .char4 {
+        font-size: 3.5rem;
+    }
+    
+    #spotify {
+        width: 45%;
+        height: 60vh;
+    }
+    
+    #back {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .char1, .char2, .char3, .char4 {
+        font-size: 3rem;
+    }
+    
+    #spotify {
+        width: 50%;
+        height: 60vh;
+    }
+    
+    #back {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .char1, .char2, .char3, .char4 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 0.05rem #2458A3;
+    }
+    
+    #spotify {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    #back {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    body{
+        background: url(./img/bg-resplay.jpg) no-repeat center center fixed;
+    }
+}

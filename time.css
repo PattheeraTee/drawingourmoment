@@ -1,0 +1,164 @@
+body {
+  font-family: "Darumadrop One", sans-serif;
+  background: url(./img/bg-time.jpg) rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.countdown-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1rem);
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 90%;
+}
+
+#howlong {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  -webkit-text-stroke: 0.15rem #2458A3;
+}
+
+input[type="date"] {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  margin: 10px;
+  font-size: 2rem;
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+.countdown-item span {
+  font-size: 3rem;
+}
+
+.time span {
+  font-size: 2.15rem;
+  -webkit-text-stroke: 0.12rem #2458A3;
+}
+
+.container {
+  width: 100vw;
+}
+
+.confetti {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  border-radius: 0%;
+}
+
+.char1 {
+  color: #BE2E34;
+}
+
+.char2 {
+  color: #5DAC41;
+}
+
+.char3 {
+  color: #F6DB4A;
+}
+
+.char4 {
+  color: #5EB1E0;
+}
+
+.char1, .char2, .char3, .char4 {
+  text-transform: uppercase;
+}
+
+#back {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: white;
+  margin: 2rem;
+  -webkit-text-stroke: 0.12rem #2458A3;
+}
+
+#back:hover {
+  text-shadow: 0 0 1rem #5EB1E0;
+}
+
+@media only screen and (max-width: 768px) {
+  #howlong {
+      font-size: 2.5rem;
+  }
+  
+  .countdown-item {
+      font-size: 1.5rem;
+  }
+  
+  .countdown-item span {
+      font-size: 2.5rem;
+  }
+
+  .time span {
+      font-size: 1.75rem;
+  }
+  
+  #back {
+      font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #howlong {
+      font-size: 2rem;
+      -webkit-text-stroke: 0.1rem #2458A3;
+  }
+
+  .countdown-item {
+      font-size: 1.2rem;
+  }
+  
+  .countdown-item span {
+      font-size: 2rem;
+  }
+
+  .time span {
+      font-size: 1.5rem;
+      -webkit-text-stroke: 0.1rem #2458A3;
+  }
+
+  #back {
+      font-size: 2rem;
+      margin: 1rem;
+  }
+}

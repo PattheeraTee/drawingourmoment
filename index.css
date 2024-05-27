@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: "Darumadrop One", sans-serif;
+}
+#Wc {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 4rem;
+    margin-top: 7%;
+    font-family: "Darumadrop One", sans-serif;
+    text-align: center;
+    -webkit-text-stroke: 0.15rem #2458A3;
+}
+#playlist, #time, #moment, #message, #other {
+    -webkit-text-stroke: 0.1rem #2458A3;
+    font-size: 3rem;
+    text-align: center;
+}
+.character img {
+    height: 35vh;
+}
+.character {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    margin-bottom: 2rem;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+body {
+    background: url(./img/bg-sea.png) no-repeat center center fixed rgba(0,0,0,0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.char1 {
+    color: #BE2E34;
+}
+.char2 {
+    color: #5DAC41;
+}
+.char3 {
+    color: #F6DB4A;
+}
+.char4 {
+    color: #5EB1E0;
+}
+.char1, .char2, .char3, .char4 {
+    text-transform: uppercase;
+}
+#kazama:hover, #nene:hover, #bojung:hover, #mazao:hover, #chinjung:hover {
+    text-shadow: 0 0 1rem #5EB1E0;
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    #Wc {
+        font-size: 3.5rem;
+    }
+    .character img {
+        height: 30vh;
+    }
+    #playlist, #time, #moment, #message, #other {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #Wc {
+        font-size: 3rem;
+    }
+    .character img {
+        height: 25vh;
+    }
+    #playlist, #time, #moment, #message, #other {
+        font-size: 2rem;
+    }
+    .character {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #Wc {
+        font-size: 2.5rem;
+    }
+    .character img {
+        height: 20vh;
+    }
+    #playlist, #time, #moment, #message, #other {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #Wc {
+        font-size: 2rem;
+    }
+    .character img {
+        height: 15vh;
+    }
+    #playlist, #time, #moment, #message, #other {
+        font-size: 1.2rem;
+        -webkit-text-stroke: 0.07rem #2458A3;
+    }
+    .character {
+        padding: 0.5rem;
+    }
+    .all {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    #Wc {
+        font-size: 1.75rem;
+        -webkit-text-stroke: 0.1rem #2458A3;
+    }
+    .all .character:nth-child(3) {
+        grid-column: span 2;
+        text-align: center;
+    }
+    .character img {
+        height: 20vh;
+    }
+    
+        body {
+            background: url(./img/-6.jpg) no-repeat center center fixed;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value to control the transparency */
+            background-size: cover;
+        }
+        
+    
+}
